@@ -21,7 +21,7 @@ spec:
           imagePullPolicy: Always
           command: [ "/bin/bash", "-c", "--" ]
           args:
-            - "ls -al /efs/xjshi/ && python /efs/xjshi/job_example.py"
+            - "wget https://gist.githubusercontent.com/yinweisu/39e18a73105f0190e0e5f057273d60b5/raw/e738771f206eb226b1204fdc9431e7ee535a1e1d/job_example.py -O job_example.py && python job_example.py"
           resources:
             requests:
               cpu: 100m
